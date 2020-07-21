@@ -5,6 +5,14 @@
   justify-content: center;
   background-color: rgb(216, 216, 216);
   border-radius: 5px;
+
+  @media @special {
+    margin: 0 -150px;
+  }
+
+  @media @tablet {
+    margin: 0 -250px;
+  }
 }
 
 .commands__item {
@@ -23,13 +31,25 @@
 .command__name {
   font-size: 26px;
 
+  @media @special {
+    font-size: 20px;
+  }
+
   &--emote {
     font-size: 25px;
+
+    @media @special {
+      font-size: 20px;
+    }
   }
 }
 
 .command__desc {
   font-size: 26px;
+
+  @media @special {
+    font-size: 20px;
+  }
 }
 
 .command__option {
@@ -38,6 +58,10 @@
   bottom: -40px;
   position: relative;
   text-align: center;
+
+  @media @special {
+    font-size: 20px;
+  }
 }
 
 .commands__item-header {
@@ -47,6 +71,10 @@
 
 .command__option-ez {
   bottom: -13rem;
+
+  @media @tablet {
+    left: -5rem
+  }
 }
 
 .kappa {
